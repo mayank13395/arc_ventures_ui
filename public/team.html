@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARC Ventures</title>
+  <link rel="icon" href="img/icon.jpg">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="css/lightcase.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext"
+    rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <style>
+
+
+  body {
+    overflow-x: hidden;
+  }
+    body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+
+    body::-webkit-scrollbar {
+      width: 5px;
+      background-color: #F5F5F5;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #333e48;
+    }
+
+    .footer-contact-number {
+    margin-bottom: 10px;
+  }
+
+    @media screen and (max-width: 768px) {
+      html {
+      overflow-x: hidden ;
+    }
+    }
+
+   
+  </style>
+</head>
+
+<body class="size-1280">
+  <!-- HEADER -->
+  <header role="banner" class="position-absolute">
+    <!-- Top Navigation -->
+    <nav class="background-transparent background-primary-dott full-width sticky top-nav-mobile top-nav-web">
+      <div class="top-nav">
+        <!-- mobile version logo -->
+        <div class="logo hide-l hide-xl hide-xxl">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <!-- <img class="logo-white" src="img/icon2.png" alt=""> -->
+            <!-- Logo Dark Version -->
+            <img id="logo-mobile" style="padding-top: 9px;" class="logo-dark" src="assets/images/AV_color.png" alt="">
+          </a>
+        </div>
+       <div class="nav-bar-m" >
+          <p style="padding-top: 5px;" class="nav-text" onclick="openNav()"></p>
+          <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+       </div>
+       <div style="clear: both;" ></div>
+
+
+       <div style="display: none; background-color: white;" id="mySidenav" class="sidenav">
+        <a style="padding-right: 50px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="text-decoration: none;padding-top: 100px;" href="index.html">Home</a>
+        <a style="text-decoration: none" href="aboutus.html">About Us</a>
+        <a style="text-decoration: none" href="team.html">Team</a>
+        <a style="text-decoration: none" href="portfolio.html">Portfolio</a>
+        <a style="text-decoration: none" href="contact.html">Contact</a>
+        <a style="text-decoration: none" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+
+
+        <div id="drpdown-content" class="dropdown-content">
+          <a style="  color: #007BC4;padding-left:32px ;
+                   padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+            rel="noopener noreferrer">ArcNest HIC</a>
+          <!-- <hr
+            style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+          <a style="  color: #007BC4;padding-left: 32px;
+                    padding-top: 5px;" href="https://amsa.in" target="_blank"
+            rel="noopener noreferrer">Amsa</a> -->
+          <!-- <a href="#">Link 2</a>
+                    <a href="#">Link 3</a> -->
+          <!-- <a href="#" >Link</a> -->
+        </div>
+      </div>
+
+
+
+        <div>
+          <!-- logo -->
+          <div style="float: left;margin-left: 50px" class="logo-menu">
+            <a  href="index.html" class="logo">
+              <img id="logo-web" src="assets/images/AV_color.png">
+            </a>
+          </div>
+
+
+
+          <!-- right menu items -->
+
+          
+
+           <!-- web navigation -->
+
+          <div id="nav-from-top" style="margin-right: 25px" class="top-nav right-menu">
+            <ul  class="top-ul chevron index-nav-mobile  web-nav">
+              <li><a style="text-decoration: none" href="index.html">Home</a></li>
+              <li><a style="text-decoration: none" href="aboutus.html">About Us</a></li>
+              <li><a style="text-decoration: none" href="team.html">Team</a></li>
+              <li><a style="text-decoration: none" href="portfolio.html">Portfolio</a></li>
+              <li><a style="text-decoration: none" href="contact.html">Contact</a></li>
+              <li><a style="text-decoration: none" href="career.html">Career</a></li>
+              <li id="drp" class="dropdown event-item">
+                <a style="text-decoration: none" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+
+
+                <div id="drpdown-content" class="dropdown-content">
+                  <a style="  padding: 0px;color: #007BC4;
+                            text-align: center;padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+                    rel="noopener noreferrer">ArcNest HIC</a>
+                  <!-- <hr
+                    style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+                  <a style="  padding: 0px;color: #007BC4;
+                             text-align: center;padding-top: 5px;" href="https://amsa.in" target="_blank"
+                    rel="noopener noreferrer">Amsa</a> -->
+                  <!-- <a href="#">Link 2</a>
+                            <a href="#">Link 3</a> -->
+                  <!-- <a href="#" >Link</a> -->
+                </div>
+
+
+              </li>
+
+              <!-- mobile view dropdown -->
+              <div style="display: none" id="mobile-drpdown">
+                <li><a target="_blank" rel="noopener noreferrer" href="event.html">ArcNest HIC</a></li>
+                <!-- <li><a target="_blank" rel="noopener noreferrer" href="https://amsa.in">Portfolio</a></li> -->
+              </div>
+
+
+            </ul>
+          </div>
+        </div>
+        <div style="clear: both"></div>
+
+        <!-- event menu -->
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main role="main">
+    <article>
+      <!-- Header -->
+      <header class="section background-image text-center" style="background-image:url(assets/images/team-top-2.png)">
+        <!-- <h1 style="color: #404040; margin-top: 60px; line-height: 1.2;">About Us</h1> -->
+        <!-- <h1 class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
+            Team
+          </h1> -->
+        <p data-aos="fade-up" data-aos-delay="50"
+        data-aos-duration="1000" class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130"
+          style="font-size: xx-large; color: #404040; margin-top: 60px; line-height: 1.2;">Meet the Founders</p>
+        <!-- <h2 class="text-dark text-size-50 text-m-size-40"><b>Team</b></h2> -->
+        <!-- <p class="animated-element text-white">Duis autem vel eum iriure dolor in hendrerit in</p> -->
+
+        <!-- white full width arrow object -->
+        <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
+      </header>
+
+      <!-- Section 1 -->
+      <section class="section background-white">
+        <!-- <div class="line text-center">
+            <h2 class="text-dark text-size-50 text-m-size-40">Who <b>We Are?</b></h2>
+            <hr class="break background-primary break-small break-center margin-bottom-50">
+          </div> -->
+        <div class="line">
+          <div class="margin2x" style="margin-bottom: 20px;">
+            <div class="m-12 l-6 margin-m-bottom-30 person-margin-top " data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+              <img class="person-img" style="    max-height: 500px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+               " src="assets/person-img/arjun-img2.png" alt="arjun Aggarwal">
+            </div>
+            <div class="m-12 l-6  person-content" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">
+              <h3 class="animated-element text-strong text-size-20 text-line-height-1 margin-bottom-20">Arjun Aggarwal:
+              </h3>
+              <p style=" text-align: justify;" class="animated-element slow margin-bottom-30">Having completed his education & lived in the UK for
+                over 20 years, Arjun realised the tremendous value in the use of technology in emerging
+                markets.<br>After relocating to India in 2014, Arjun aligned his interest to create &
+                identify start-up’s tuned towards macro-scale social impact. India became an ideal skirmish where he
+                found both ample talent & a significant appetite for improvement across its many sectors.<br>Arjun’s achievements merit him access to the political and bureaucratic leadership of a number of
+                Asian, African and Middle Eastern countries. This allows for critical & effective delivery of diverse
+                products and ideas.<br>He likes companies involved in:<br>-Utilizing the vast advantages that
+                machine learning can provide.<br>-Improving quality of life in India.<br><a
+                  class="text-primary-hover" target="_blank" href="mailto:arjun@ivora.co"><em>Email him with your
+                    idea</em></a></p>
+            </div>
+          </div>
+          <div class="margin2x">
+            <div class="m-12 l-6 margin-m-bottom-30 person-margin-top" data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+              <img class="person-img" style="    max-height: 500px;
+              margin-left: 50%;
+              transform: translateX(-50%);" src="assets/person-img/cibi-img.png" alt="">
+            </div>
+            <div class="m-12 l-6  person-content" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">
+              <h3 class="animated-element text-strong text-size-20 text-line-height-1 margin-bottom-20">Cibi K Chandran:
+              </h3>
+              <p style=" text-align: justify;" class="animated-element slow margin-bottom-30 ">A textile technology expert, Cibi pursued a bachelors in
+                Management at Manchester followed by a masters in Finance at Westminster.<br>Cibi is a director at
+                his family Group - Eastman Exports, India’s second largest garment manufacturer with a turnover of $350
+                million+ per annum over the last 10 years. Eastman caters to leading global brands like Jack & Jones,
+                Calvin Klein, GAP, Diesel and many others.<br>Cibi also founded Huetrap, an online fashion brand
+                which has a unique just-in-time model for manufacture and is targeted to 18-30 year olds.<br>Mr
+                Chandran has a keen interest in companies involved in vastly improving India’s rural class. Apart from
+                expertise in fashion, at-scale manufacturing, he is passionate about sustainable and environmentally
+                friendly manufacturing processes and techniques.<br>He likes companies involved in: <br>-Vastly
+                improving India’s rural class.<br>-Any proprietary technology that has the capability of improving
+                India’s way of life.<br><a class="text-primary-hover" href="mailto:cibi.karthic@gmail.com"><em>Email
+                    him with your idea</em></a></p>
+            </div>
+          </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <hr>
+  <footer>
+    <section class="section footer-section  ">
+      <div class="line"> 
+        <div class="margin2x">
+          <div class="s-12 m-6 l-6 xl-6 footer-section-link">
+              
+              <a style="" class="text-primary-hover" href="index.html">Home</a> &nbsp;  &nbsp; &nbsp;  
+              <a  style="" class="text-primary-hover" href="aboutus.html">About Us</a> &nbsp; &nbsp; &nbsp;
+              <a style="" class="text-primary-hover" href="team.html">Team</a> &nbsp; &nbsp; &nbsp;
+              <a style="" class="text-primary-hover" href="portfolio.html">Portfolio</a>
+              <div class="facebook-link" style="text-align: left;padding-left: 74px;padding-top: 10px;">Follow us :<a target="_blank"
+                rel="noopener noreferrer" href="https://www.facebook.com/Arc-Venture-101823944661839/?modal=admin_todo_tour"><span style="padding-left: 20px;"><img  style="vertical-align: middle; display: inline-block;" src="assets/icons/facebook.png">&nbsp;  Facebook </span></a></div>
+          </div>
+          <div class="s-12 m-6 l-6 xl-6  footer-contact">
+                  <!-- <h4 class="text-white text-strong margin-m-top-30">Contact Us:</h4> -->
+              
+                      
+                      <div class="footer-contact-left">
+                              <p  class="footer-contact-number" style=""><i class="icon-sli-screen-smartphone text-primary "></i> +91 9953793217</p>
+                              <div  style="" class="text-primary-hover container-adrress" target="_blank" href="mailto:arjun@ivora.co"><img src="assets/icons/e-mail-envelope.png"><span><a> &nbsp; contact@arc.ventures</a></span> </div>
+                      </div>
+
+                      <div  class="footer-contact-right
+                      ">
+                              <!-- <p style="color: white"><i class="icon-sli-screen-smartphone text-primary"></i> Address:</p> -->
+                             <div class="container-adrress">
+                                  <img  style="vertical-align: middle" src="assets/icons/placeholder.png">
+                                  <span style="">  ArcV Holdings Pvt.Ltd.</span>
+                             </div> 
+                             <div style="clear: both"></div>
+                              <!-- <p style="color: white">   &nbsp; &nbsp; &nbsp; LGF, Plot No.5 ,LSC, C-6&7</p> -->
+                              <p style="">  &nbsp; &nbsp;Vasant Kunj, New Delhi 110070</p>
+                      </div>
+
+                      <div style="clear: both"></div>
+                      <!-- <a style="color: white" class="text-primary-hover" target="_blank" href="mailto:k.rao@ivora.co"><i class="icon-mail text-primary"></i> k.rao@ivora.co</a> -->
+              
+             
+              <!-- <a class="text-primary-hover" href="mailto:office@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> office@sampledomain.com</a> -->
+          </div>
+        </div>  
+      </div>    
+    </section>
+  </footer>
+  <script type="text/javascript" src="js/responsee.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/template-scripts.js"></script>
+  <script>
+
+      let isMobileView = false;
+  
+     function toggleDropDown() {
+       console.log('fffffffffffff');
+       
+       console.log('ismobileview',isMobileView);
+       
+       if(isMobileView){
+        var y = document.getElementById("drpdown-content");
+          if (y.style.display === "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          }
+       }
+  
+     } 
+  
+  
+      function dropDownForMobile(x) {
+        if (x.matches) { // If media query matches
+          console.log('kkkkkkkkkkkkk');
+          isMobileView = true;
+  
+          
+  
+        } else {
+          // document.body.style.backgroundColor = "pink";
+          isMobileView = false;
+        }
+      }
+  
+      var x = window.matchMedia("(max-width: 768px)")
+      dropDownForMobile(x); // Call listener function at run time
+      x.addListener(dropDownForMobile);
+  
+  
+  
+      //mobile side nav functionality
+  
+      function openNav() {
+        console.log(
+          'goitttttit'
+        );
+        document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("mySidenav").style.width = "175px";
+    document.getElementById("mySidenav").style.transition = "0.5s";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  
+  
+  document.getElementById('main-contents').addEventListener('click', ()=>{
+    console.log('hide');
+    
+    document.getElementById("mySidenav").style.display = "none";
+  });
+  
+  
+  
+    </script>
+
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

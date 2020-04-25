@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARC Ventures</title>
+    <!-- <link rel="stylesheet" href="lib/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext"
+        rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <style>
+        html {
+            font-size: 100%;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 5px;
+            background-color: #F5F5F5;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #333e48;
+        }
+    </style>
+    <style>
+        .top-nav-web {
+            /* padding-top: 0px !important; */
+            padding-bottom: 1px !important;
+        }
+
+        .classlogoimg {
+            height: 180px;
+            width: auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .first-form {
+            margin: 25px 0px;
+        }
+
+        .form-message {
+            margin: 25px 0px;
+        }
+
+        .form-section {
+            margin: 80px 0px;
+        }
+
+        .second-form {
+            margin: 0px 0px;
+        }
+
+        .form-element {
+            margin-bottom: 40px;
+        }
+
+        #sendmessage {
+            display: none;
+        }
+
+        #btnContactUs :hover {
+            background-color: #a6d0f5;
+        }
+    </style>
+</head>
+
+<body class="size-1280">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-primary-dott full-width sticky top-nav-mobile top-nav-web">
+          <div class="top-nav">
+            <!-- mobile version logo -->
+            <div class="logo hide-l hide-xl hide-xxl">
+              <a href="index.html" class="logo">
+                <!-- Logo White Version -->
+                <!-- <img class="logo-white" src="img/icon2.png" alt=""> -->
+                <!-- Logo Dark Version -->
+                <img id="logo-mobile" style="padding-top: 9px;" class="logo-dark" src="assets/images/AV_color.png" alt="">
+              </a>
+            </div>
+           <div class="nav-bar-m" >
+              <p style="padding-top: 5px;" class="nav-text" onclick="openNav()"></p>
+              <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+           </div>
+           <div style="clear: both;" ></div>
+    
+    
+           <div style="display: none; background-color: white;" id="mySidenav" class="sidenav">
+            <a style="padding-right: 50px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a style="text-decoration: none;padding-top: 100px;" href="index.html">Home</a>
+            <a style="text-decoration: none" href="aboutus.html">About Us</a>
+            <a style="text-decoration: none" href="team.html">Team</a>
+            <a style="text-decoration: none" href="portfolio.html">Portfolio</a>
+            <a style="text-decoration: none" href="contact.html">Contact</a>
+            <a style="text-decoration: none" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+    
+    
+            <div id="drpdown-content" class="dropdown-content">
+              <a style="  color: #007BC4;padding-left:32px ;
+                       padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+                rel="noopener noreferrer">ArcNest HIC</a>
+              <!-- <hr
+                style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+              <a style="  color: #007BC4;padding-left: 32px;
+                        padding-top: 5px;" href="https://amsa.in" target="_blank"
+                rel="noopener noreferrer">Amsa</a> -->
+              <!-- <a href="#">Link 2</a>
+                        <a href="#">Link 3</a> -->
+              <!-- <a href="#" >Link</a> -->
+            </div>
+          </div>
+    
+    
+    
+            <div>
+              <!-- logo -->
+              <div style="float: left;margin-left: 50px" class="logo-menu">
+                <a  href="index.html" class="logo">
+                  <img id="logo-web" src="assets/images/AV_color.png">
+                </a>
+              </div>
+    
+    
+    
+              <!-- right menu items -->
+    
+              
+    
+               <!-- web navigation -->
+    
+              <div id="nav-from-top" style="margin-right: 25px" class="top-nav right-menu">
+                <ul  class="top-ul chevron index-nav-mobile  web-nav">
+                  <li><a style="text-decoration: none" href="index.html">Home</a></li>
+                  <li><a style="text-decoration: none" href="aboutus.html">About Us</a></li>
+                  <li><a style="text-decoration: none" href="team.html">Team</a></li>
+                  <li><a style="text-decoration: none" href="portfolio.html">Portfolio</a></li>
+                  <li><a style="text-decoration: none" href="contact.html">Contact</a></li>
+                  <li><a style="text-decoration: none" href="career.html">Career</a></li>
+                  <li id="drp" class="dropdown event-item">
+                    <a style="text-decoration: none;   color: #333E48 !important;" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+    
+    
+                    <div id="drpdown-content" class="dropdown-content">
+                      <a style="  padding: 0px;color: #007BC4;
+                                text-align: center;padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+                        rel="noopener noreferrer">ArcNest HIC</a>
+                      <!-- <hr
+                        style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+                      <a style="  padding: 0px;color: #007BC4;
+                                 text-align: center;padding-top: 5px;" href="https://amsa.in" target="_blank"
+                        rel="noopener noreferrer">Amsa</a> -->
+                      <!-- <a href="#">Link 2</a>
+                                <a href="#">Link 3</a> -->
+                      <!-- <a href="#" >Link</a> -->
+                    </div>
+    
+    
+                  </li>
+    
+                  <!-- mobile view dropdown -->
+                  <div style="display: none" id="mobile-drpdown">
+                    <li><a target="_blank" rel="noopener noreferrer" href="event.html">ArcNest HIC</a></li>
+                    <!-- <li><a target="_blank" rel="noopener noreferrer" href="https://amsa.in">Portfolio</a></li> -->
+                  </div>
+    
+    
+                </ul>
+              </div>
+            </div>
+            <div style="clear: both"></div>
+    
+            <!-- event menu -->
+    
+          </div>
+        </nav>
+      </header>
+
+    <!-- MAIN -->
+    <main role="main">
+        <article>
+            <!-- Header -->
+            <header class="section background-image text-center"
+                style="background-image:url(assets/images/career8.png); opacity: 0.7;">
+                <!-- <h1 class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
+            Portfolio Companies
+          </h1> -->
+                <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+                    class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130"
+                    style="font-size: xx-large; color: #404040; margin-top: 60px; line-height: 1.2;">Join our Team</p>
+                <!-- white full width arrow object -->
+                <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
+            </header>
+
+            <!-- Section 1 -->
+            <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center form-section"
+                data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                <!-- <div class="container marginbot-50">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="animatedParent">
+                    <div class="section-heading text-center">
+                      <h2 class="h-bold animated bounceInDown">Get in touch with us</h2>
+                      <div class="divider-header"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div> -->
+
+                <div class="container">
+
+                    <div class="row marginbot-80">
+                        <div style="margin: 0 auto;" class="col-md-8 col-md-offset-2">
+                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                            <div id="errormessage"></div>
+                            <form id="contact-form" class="contactForm">
+                                <div class="row first-form marginbot-20">
+                                    <div class="col-md-6 xs-marginbot-20">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder="Your Name" data-rule="minlen:4"
+                                                data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input onfocusout="checkemailValidation(event)"
+                                                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                                required type="email" class="form-control" name="email" id="email"
+                                                placeholder="Your Email" data-rule="email"
+                                                data-msg="Please enter a valid email" />
+
+
+                                            <div class="validation">
+                                                <small id="email-empty" style="display: none;color: red;">Email cannot
+                                                    be empty</small>
+                                                <small id="email-incorrect" style="display: none; color: red;">Email
+                                                    Incorrect</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row second-form">
+                                    <div class="col-md-12">
+                                        <div class="form-group form-element ">
+                                            <select id="profile" type="text" class="form-control" name="subject" id="subject"
+                                                placeholder="Applying For" data-rule="minlen:4"
+                                                data-msg="Please enter at least 8 chars of subject">
+
+                                                <option value="sd">Software Developer</option>
+                                                <option value="ml">Machine Learning</option>
+                                                <option value="mercedes">Embeded Engineering</option>
+                                                <!-- <option default value="audi"></option> -->
+                                            </select>
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileInput" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+                                            text/plain, application/pdf, " required>
+                                            <label id="showFileName" style="text-align: left;" class="custom-file-label"
+                                                for="validatedCustomFile">Upload your resume.....</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
+
+                                        <div class="form-group form-message form-element ">
+                                            <textarea class="form-control" id="messageFromUser" name="message" rows="5"
+                                                data-rule="required" data-msg="Please write something for us"
+                                                placeholder="Why should we hire you..."></textarea>
+                                            <div class="validation"></div>
+                                        </div>
+
+                                        <button disabled style="background-color: #5d99cf;color:white;"
+                                            onclick="sendUserDetail(event)" class="btn btn-skin btn-lg btn-block"
+                                            id="btnContactUs">
+                                            Submit</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <!-- <hr width="90%" style="margin: 0 auto" > -->
+    <hr>
+    <footer>
+        <section class="section footer-section  ">
+          <div class="line"> 
+            <div class="margin2x">
+              <div class="s-12 m-6 l-6 xl-6 footer-section-link">
+                  
+                  <a style="" class="text-primary-hover" href="index.html">Home</a> &nbsp;  &nbsp; &nbsp;  
+                  <a  style="" class="text-primary-hover" href="aboutus.html">About Us</a> &nbsp; &nbsp; &nbsp;
+                  <a style="" class="text-primary-hover" href="team.html">Team</a> &nbsp; &nbsp; &nbsp;
+                  <a style="" class="text-primary-hover" href="portfolio.html">Portfolio</a>
+                  <div class="facebook-link" style="text-align: left;padding-left: 74px;padding-top: 10px;">Follow us :<a target="_blank"
+                    rel="noopener noreferrer" href="https://www.facebook.com/Arc-Venture-101823944661839/?modal=admin_todo_tour"><span style="padding-left: 20px;"><img  style="vertical-align: middle; display: inline-block;" src="assets/icons/facebook.png">&nbsp;  Facebook </span></a></div>
+              </div>
+              <div class="s-12 m-6 l-6 xl-6  footer-contact">
+                      <!-- <h4 class="text-white text-strong margin-m-top-30">Contact Us:</h4> -->
+                  
+                          
+                          <div class="footer-contact-left">
+                                  <p  class="footer-contact-number" style=""><i class="icon-sli-screen-smartphone text-primary "></i> +91 9953793217</p>
+                                  <div  style="" class="text-primary-hover container-adrress" target="_blank" href="mailto:arjun@ivora.co"><img src="assets/icons/e-mail-envelope.png"><span><a> &nbsp; contact@arc.ventures</a></span> </div>
+                          </div>
+    
+                          <div  class="footer-contact-right
+                          ">
+                                  <!-- <p style="color: white"><i class="icon-sli-screen-smartphone text-primary"></i> Address:</p> -->
+                                 <div class="container-adrress">
+                                      <img  style="vertical-align: middle" src="assets/icons/placeholder.png">
+                                      <span style="">  ArcV Holdings Pvt.Ltd.</span>
+                                 </div> 
+                                 <div style="clear: both"></div>
+                                  <!-- <p style="color: white">   &nbsp; &nbsp; &nbsp; LGF, Plot No.5 ,LSC, C-6&7</p> -->
+                                  <p style="">  &nbsp; &nbsp;Vasant Kunj, New Delhi 110070</p>
+                          </div>
+    
+                          <div style="clear: both"></div>
+                          <!-- <a style="color: white" class="text-primary-hover" target="_blank" href="mailto:k.rao@ivora.co"><i class="icon-mail text-primary"></i> k.rao@ivora.co</a> -->
+                  
+                 
+                  <!-- <a class="text-primary-hover" href="mailto:office@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> office@sampledomain.com</a> -->
+              </div>
+            </div>  
+          </div>    
+        </section>
+      </footer>
+
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <!-- firebase functions  -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-functions.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCSolDzC69z0z4-KMnOkbTY0grgj9aA7gI",
+            authDomain: "arc-ventures.firebaseapp.com",
+            databaseURL: "https://arc-ventures.firebaseio.com",
+            projectId: "arc-ventures",
+            storageBucket: "arc-ventures.appspot.com",
+            messagingSenderId: "447126609837",
+            appId: "1:447126609837:web:eb962628df47337eb00b24"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    // firebase.functions();
+    </script>
+
+    <script>
+
+        let isMobileView = false;
+
+        function toggleDropDown() {
+            console.log('fffffffffffff');
+
+            console.log('ismobileview', isMobileView);
+
+            if (isMobileView) {
+                var y = document.getElementById("drpdown-content");
+                if (y.style.display === "block") {
+                    y.style.display = "none";
+                } else {
+                    y.style.display = "block";
+                }
+            }
+
+        }
+
+
+        function dropDownForMobile(x) {
+            if (x.matches) { // If media query matches
+                console.log('kkkkkkkkkkkkk');
+                isMobileView = true;
+
+
+
+            } else {
+                // document.body.style.backgroundColor = "pink";
+                isMobileView = false;
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 768px)")
+        dropDownForMobile(x); // Call listener function at run time
+        x.addListener(dropDownForMobile);
+
+
+
+        //mobile side nav functionality
+
+        function openNav() {
+            console.log(
+                'goitttttit'
+            );
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("mySidenav").style.width = "175px";
+            document.getElementById("mySidenav").style.transition = "0.5s";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+        // document.getElementById('main-contents').addEventListener('click', () => {
+        //   console.log('hide');
+
+        //   document.getElementById("mySidenav").style.display = "none";
+        // });
+
+
+        // function sendUserDetail(e) {
+
+
+        //     // btnContactUs
+
+
+
+
+        //     console.log(e);
+
+        //     e.preventDefault();
+
+        //     console.log(document.getElementById('name').value);
+
+        //     let userObj = {
+        //         name: document.getElementById('name').value,
+        //         email: document.getElementById('email').value,
+        //         subject: document.getElementById('subject').value,
+        //         message: document.getElementById('messageFromUser').value
+        //     }
+
+        //     console.log('userObj', userObj);
+
+
+        //     // axios.post('https://us-central1-arc-ventures.cloudfunctions.net/emailMessage',userObj )
+        //     //   .then(function (response) {
+        //     //     console.log(response);
+        //     //   })
+        //     //   .catch(function (error) {
+        //     //     console.log(error);
+        //     //   });
+
+
+        //     var addMessage = firebase.functions().httpsCallable('addMessage');
+        //     addMessage(userObj).then(function (result) {
+
+        //         console.log('result:', result);
+
+        //         // Read result of the Cloud Function.
+        //         // var sanitizedMessage = result.data.text;
+        //         // ...
+        //     })
+        //         .catch((error) => {
+        //             console.log('error:', error);
+
+        //         });
+
+
+
+        //     document.getElementById('sendmessage').style.display = 'block';
+
+        //     console.log('gggg');
+
+        // }
+
+        var isEmail = false;
+        var file;
+        function checkemailValidation(email) {
+
+            console.log(email.srcElement.value);
+            // let file = document.getElementById('fileInput').files[0];
+            console.log(file,isEmail);
+
+
+            // 
+            if (email.srcElement.value && file!=null ) {
+                document.getElementById('btnContactUs').disabled = false;
+            }
+            
+
+            if (validateEmail(email.srcElement.value) ) {
+                   isEmail = true;
+                document.getElementById('email').style.borderColor = '#CCCCCC';
+                document.getElementById('email-empty').style.display = 'none';
+                document.getElementById('email-incorrect').style.display = 'none';
+
+
+            } else if (!validateEmail(email.srcElement.value) ) {
+                isEmail = false;
+                document.getElementById('btnContactUs').disabled = true;
+                document.getElementById('email').style.borderColor = 'red'
+
+                if (!email.srcElement.value) {
+                    document.getElementById('email-empty').style.display = 'block';
+                    document.getElementById('email-incorrect').style.display = 'none';
+                } else {
+                    document.getElementById('email-incorrect').style.display = 'block';
+                    document.getElementById('email-empty').style.display = 'none';
+                }
+            }
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+
+        function sendUserDetail(e) {
+
+            e.preventDefault();
+
+            console.log(document.getElementById('fileInput').files[0]);
+            console.log(document.getElementById('fileInput').files[0].name);
+
+            let userObj = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                file: {
+                    name: document.getElementById('fileInput').files[0].name,
+                    data: document.getElementById('fileInput').files[0]
+                },
+                profile: document.getElementById('profile').value
+            }
+
+            console.log('user', userObj);
+
+
+            var addMessage = firebase.functions().httpsCallable('sendUserData');
+
+
+            addMessage(userObj).then(function (result) {
+
+                console.log('result:', result);
+
+
+
+                // Read result of the Cloud Function.
+                // var sanitizedMessage = result.data.text;
+                // ...
+            })
+                .catch((error) => {
+                    console.log('error:', error);
+
+                });
+
+
+                document.getElementById('sendmessage').style.display = 'block';
+
+        }
+
+
+        document.getElementById('fileInput').onchange = function () {
+            // alert('Selected file: ' + this.value);
+            let filename = this.files.item(0).name;
+            console.log("filename", filename);
+            file = this.files;
+
+            if(this.files && isEmail){
+                document.getElementById('btnContactUs').disabled = false;
+            }
+            document.getElementById('showFileName').innerText = filename;
+        };
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

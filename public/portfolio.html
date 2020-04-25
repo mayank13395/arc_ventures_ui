@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARC Ventures</title>
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CUSTOM STYLE -->      
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> 
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+    <style>
+      body::-webkit-scrollbar-track
+      {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+      }
+
+      body::-webkit-scrollbar
+      {
+        width: 5px;
+        background-color: #F5F5F5;
+      }
+
+      body::-webkit-scrollbar-thumb
+      {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #333e48;
+      }
+    </style> 
+    <style>
+      .classlogoimg{
+        height: 180px;
+        width: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer-contact-number {
+    margin-bottom: 10px;
+  }
+
+
+      @media screen and (max-width: 768px) {
+
+        #phicode-logo {
+          margin-top: 0px !important;
+        }
+
+        .full-img {
+          margin-top: 0px !important;
+        }
+        .new-mobile-top {
+          margin-top: 50px;
+        }
+     
+    }
+
+
+    .img-hover:hover {
+      transform: scale(1.1);
+     
+
+    }
+
+    .img-hover {
+      transition: all .5s;
+    }
+    .parent {
+  width: 337.98px; 
+  height: 197.56px;
+}
+
+    .child {
+  width: 100%;
+  height: 100%;
+  /* background-color: black; fallback color */
+  background-image: url("aerodyne2.png");
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.new-margin-top {
+  margin-top: 55px;
+}
+
+.global-top{
+  margin-top: 25px;
+}
+
+
+    </style>
+  </head>
+  
+  <body class="size-1280">
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-primary-dott full-width sticky top-nav-mobile top-nav-web">
+        <div class="top-nav">
+          <!-- mobile version logo -->
+          <div class="logo hide-l hide-xl hide-xxl">
+            <a href="index.html" class="logo">
+              <!-- Logo White Version -->
+              <!-- <img class="logo-white" src="img/icon2.png" alt=""> -->
+              <!-- Logo Dark Version -->
+              <img id="logo-mobile" style="padding-top: 9px;" class="logo-dark" src="assets/images/AV_color.png" alt="">
+            </a>
+          </div>
+         <div class="nav-bar-m" >
+            <p style="padding-top: 5px;" class="nav-text" onclick="openNav()"></p>
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+         </div>
+         <div style="clear: both;" ></div>
+  
+  
+         <div style="display: none; background-color: white;" id="mySidenav" class="sidenav">
+          <a style="padding-right: 50px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a style="text-decoration: none;padding-top: 100px;" href="index.html">Home</a>
+          <a style="text-decoration: none" href="aboutus.html">About Us</a>
+          <a style="text-decoration: none" href="team.html">Team</a>
+          <a style="text-decoration: none" href="portfolio.html">Portfolio</a>
+          <a style="text-decoration: none" href="contact.html">Contact</a>
+          <a style="text-decoration: none" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+  
+  
+          <div id="drpdown-content" class="dropdown-content">
+            <a style="  color: #007BC4;padding-left:32px ;
+                     padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+              rel="noopener noreferrer">ArcNest HIC</a>
+            <!-- <hr
+              style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+            <a style="  color: #007BC4;padding-left: 32px;
+                      padding-top: 5px;" href="https://amsa.in" target="_blank"
+              rel="noopener noreferrer">Amsa</a> -->
+            <!-- <a href="#">Link 2</a>
+                      <a href="#">Link 3</a> -->
+            <!-- <a href="#" >Link</a> -->
+          </div>
+        </div>
+  
+  
+  
+          <div>
+            <!-- logo -->
+            <div style="float: left;margin-left: 50px" class="logo-menu">
+              <a  href="index.html" class="logo">
+                <img id="logo-web" src="assets/images/AV_color.png">
+              </a>
+            </div>
+  
+  
+  
+            <!-- right menu items -->
+  
+            
+  
+             <!-- web navigation -->
+  
+            <div id="nav-from-top" style="margin-right: 25px" class="top-nav right-menu">
+              <ul  class="top-ul chevron index-nav-mobile  web-nav">
+                <li><a style="text-decoration: none" href="index.html">Home</a></li>
+                <li><a style="text-decoration: none" href="aboutus.html">About Us</a></li>
+                <li><a style="text-decoration: none" href="team.html">Team</a></li>
+                <li><a style="text-decoration: none" href="portfolio.html">Portfolio</a></li>
+                <li><a style="text-decoration: none" href="contact.html">Contact</a></li>
+                <li><a style="text-decoration: none" href="career.html">Career</a></li>
+                <li id="drp" class="dropdown event-item">
+                  <a style="text-decoration: none" onclick="toggleDropDown()" id="drpdown" class="dropbtn">Events</a>
+  
+  
+                  <div id="drpdown-content" class="dropdown-content">
+                    <a style="  padding: 0px;color: #007BC4;
+                              text-align: center;padding-top: 5px;margin-bottom: 4px;" href="event.html" target="_blank"
+                      rel="noopener noreferrer">ArcNest HIC</a>
+                    <!-- <hr
+                      style="height:1px; border:none; color:#000; background-color: #1988CA;    margin-top: 4px; width:60%; text-align:center; margin: 0 auto;">
+                    <a style="  padding: 0px;color: #007BC4;
+                               text-align: center;padding-top: 5px;" href="https://amsa.in" target="_blank"
+                      rel="noopener noreferrer">Amsa</a> -->
+                    <!-- <a href="#">Link 2</a>
+                              <a href="#">Link 3</a> -->
+                    <!-- <a href="#" >Link</a> -->
+                  </div>
+  
+  
+                </li>
+  
+                <!-- mobile view dropdown -->
+                <div style="display: none" id="mobile-drpdown">
+                  <li><a target="_blank" rel="noopener noreferrer" href="event.html">ArcNest HIC</a></li>
+                  <!-- <li><a target="_blank" rel="noopener noreferrer" href="https://amsa.in">Portfolio</a></li> -->
+                </div>
+  
+  
+              </ul>
+            </div>
+          </div>
+          <div style="clear: both"></div>
+  
+          <!-- event menu -->
+  
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <article>    
+        <!-- Header -->
+        <header class="section background-image text-center" style="background-image:url(assets/images/portfolio-top-2.png)">
+          <!-- <h1 class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
+            Portfolio Companies
+          </h1> -->
+          <p data-aos="fade-up" data-aos-delay="50"
+          data-aos-duration="1000" class="animated-element slow text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130" style="font-size: xx-large; color: #404040; margin-top: 60px; line-height: 1.2;">Take a look at our Portfolio Companies</p>
+          <!-- white full width arrow object -->
+          <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
+        </header>
+        
+        <!-- Section 1 -->
+        <section class="section background-white">      
+          <div class="line">
+            <div class="margin2x">
+
+                <!-- <div class="parent s-12 m-4 margin-bottom-30">
+                    <div class="child"></div>
+                  </div> -->
+                        
+          <div>
+            <div class="s-12 m-4 margin-bottom-30">
+              <a target="_blank" href="https://aerodyne.group">
+                <img 
+                style=" display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70% ;
+                margin-top: 30px;
+                vertical-align: middle;
+                " class="full-img img-hover" src="aerodyne2.png" alt=""/>
+              </a>
+            </div> 
+            <div class="s-12 m-4 margin-bottom-30 new-margin-top">
+              <a target="_blank" href="https://arcnest.in/">
+                <img  style=" display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50% ;
+                margin-top: 70px;
+                vertical-align: middle;
+                "  class="full-img img-hover" src="img/arc-nest-new.png" alt=""/>
+              </a>
+            </div>
+
+            <div class="s-12 m-4 margin-bottom-30 ">
+              <a target="_blank" href="https://geekpictures.in/">
+              <img  style=" display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100% ;
+              margin-top: 20px;
+              vertical-align: middle;
+              " class="full-img img-hover" src="assets/images/geekpictures-logo.jpg" alt=""/>
+            </div> 
+            <!-- <div class="s-12 m-4 margin-bottom-30">
+              <a target="_blank" href="https://3dusher.com/">
+                <img style=" display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50% ;
+                margin-top: 70px;
+                vertical-align: middle;
+                "  class="full-img img-hover" src="img/3dusher1.png" alt=""/>
+              </a>
+            </div> -->
+          </div>
+
+       <div>
+        <div style="clear: both;"></div>
+
+        <div class="s-12 m-4 margin-bottom-30">
+          <a target="_blank" href="http://phicode.io//">
+          <img id="phicode-logo"  style=" display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 25% ;
+          margin-top: 70px;
+          vertical-align: middle;
+          " class="full-img img-hover" src="assets/icons/logo-phicode.png" alt=""/>
+        </div> 
+     
+        <!-- <div class="s-12 m-4 margin-bottom-30">
+          <a target="_blank" href="http://www.indotechindustries.com/">
+            <img style=" display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60% ;
+            margin-top: 90px;
+            vertical-align: middle;
+            " class="full-img img-hover" src="img/indotech1.png" alt=""/>
+          </a>
+        </div>  -->
+        <div class="s-12 m-4 margin-bottom-30 new-mobile-top">
+          <a target="_blank" href="http://ivora.co//">
+            <img  style=" display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50% ;
+            margin-top: 70px;
+            vertical-align: middle;
+            "  class="full-img img-hover" src="ivora3.png" alt=""/>
+          </a>
+        </div>
+
+       
+
+        <div class="s-12 m-4 margin-bottom-30 ">
+          <img  style=" display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70% ;
+          margin-top: 50px;
+          vertical-align: middle;
+          " class="full-img img-hover" src="seggro1.png" alt=""/>
+        </div>
+        
+        </div> 
+       </div>
+       <div style="clear: both;"></div>
+              <div>
+
+
+                  <!-- <div class="s-12 m-4 margin-bottom-30 ">
+                      <img  style=" display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 80% ;
+                      margin-top: 50px;
+                      vertical-align: middle;
+                      " class="full-img img-hover" src="assets/images/arcnest-img2.png" alt=""/>
+                    </div>    -->
+               
+                <!-- <div class="s-12 m-4 margin-bottom-30 ">
+                  <img 
+                  class="full-img img-hover" src="assets/images/archer-corp-img.png" alt=""/>
+                </div>    -->
+                <div class="s-12 m-4 margin-bottom-30">
+                    <img style=" display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80% ;
+                    margin-top: 40px;
+                    vertical-align: middle;
+                    "  class="full-img img-hover" src="assets/slider-image/auro logo.png" alt=""/>
+                                 
+                </div>  
+
+                <div class="s-12 m-4 margin-bottom-30 ">
+                  <img 
+                  class="full-img img-hover" src="assets/images/archer-corp-img.png" alt=""/>
+                </div> 
+
+
+                <div class="s-12 m-4 margin-bottom-30  global-top">
+                    <!-- <a target="_blank" href="http://global3dlabs.com/"> -->
+                      <img style=" display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 30% ;
+                      margin-top: 40px;
+                      vertical-align: middle;
+                      "  class="full-img img-hover" src="img/global3d3.jpeg" alt=""/>
+                    </a>
+                  </div> 
+
+           
+          
+              
+                
+              <div style="clear: both;"></div> 
+              <div>
+
+             
+                  <!-- <div class="s-12 m-4 margin-bottom-30">
+                      <a target="_blank" href="https://3dusher.com/">
+                        <img style=" display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50% ;
+                        margin-top: 0px;
+                        vertical-align: middle;
+                        "  class="full-img img-hover" src="img/3dusher1.png" alt=""/>
+                      </a>
+                    </div> -->
+                  <!-- <div class="s-12 m-4 margin-bottom-30">
+                      <img id="phicode-logo"  style=" display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 25% ;
+                      margin-top: 70px;
+                      vertical-align: middle;
+                      " class="full-img img-hover" src="assets/icons/logo-phicode.png" alt=""/>
+                    </div>  -->
+                    
+                 <!-- <div class="s-12 m-4 margin-bottom-30 ">
+                  <img  style=" display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 100% ;
+                  margin-top: 20px;
+                  vertical-align: middle;
+                  " class="full-img img-hover" src="assets/images/geekpictures-logo.jpg" alt=""/>
+                </div>         -->
+              </div>
+              
+              
+            </div>
+          </div>       
+        </section>
+      </article>
+      
+    </main>
+    
+    <!-- FOOTER -->
+    <hr>
+    <footer>
+      <section class="section footer-section  ">
+        <div class="line"> 
+          <div class="margin2x">
+            <div class="s-12 m-6 l-6 xl-6 footer-section-link">
+                
+                <a style="" class="text-primary-hover" href="index.html">Home</a> &nbsp;  &nbsp; &nbsp;  
+                <a  style="" class="text-primary-hover" href="aboutus.html">About Us</a> &nbsp; &nbsp; &nbsp;
+                <a style="" class="text-primary-hover" href="team.html">Team</a> &nbsp; &nbsp; &nbsp;
+                <a style="" class="text-primary-hover" href="portfolio.html">Portfolio</a>
+                <div class="facebook-link" style="text-align: left;padding-left: 74px;padding-top: 10px;">Follow us :<a target="_blank"
+                  rel="noopener noreferrer" href="https://www.facebook.com/Arc-Venture-101823944661839/?modal=admin_todo_tour"><span style="padding-left: 20px;"><img  style="vertical-align: middle; display: inline-block;" src="assets/icons/facebook.png">&nbsp;  Facebook </span></a></div>
+            </div>
+            <div class="s-12 m-6 l-6 xl-6  footer-contact">
+                    <!-- <h4 class="text-white text-strong margin-m-top-30">Contact Us:</h4> -->
+                
+                        
+                        <div class="footer-contact-left">
+                                <p  class="footer-contact-number" style=""><i class="icon-sli-screen-smartphone text-primary "></i> +91 9953793217</p>
+                                <div  style="" class="text-primary-hover container-adrress" target="_blank" href="mailto:arjun@ivora.co"><img src="assets/icons/e-mail-envelope.png"><span><a> &nbsp; contact@arc.ventures</a></span> </div>
+                        </div>
+  
+                        <div  class="footer-contact-right
+                        ">
+                                <!-- <p style="color: white"><i class="icon-sli-screen-smartphone text-primary"></i> Address:</p> -->
+                               <div class="container-adrress">
+                                    <img  style="vertical-align: middle" src="assets/icons/placeholder.png">
+                                    <span style="">  ArcV Holdings Pvt.Ltd.</span>
+                               </div> 
+                               <div style="clear: both"></div>
+                                <!-- <p style="color: white">   &nbsp; &nbsp; &nbsp; LGF, Plot No.5 ,LSC, C-6&7</p> -->
+                                <p style="">  &nbsp; &nbsp;Vasant Kunj, New Delhi 110070</p>
+                        </div>
+  
+                        <div style="clear: both"></div>
+                        <!-- <a style="color: white" class="text-primary-hover" target="_blank" href="mailto:k.rao@ivora.co"><i class="icon-mail text-primary"></i> k.rao@ivora.co</a> -->
+                
+               
+                <!-- <a class="text-primary-hover" href="mailto:office@sampledomain.com"><i class="icon-sli-mouse text-primary"></i> office@sampledomain.com</a> -->
+            </div>
+          </div>  
+        </div>    
+      </section>
+    </footer>
+
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script> 
+
+
+    <script>
+
+        let isMobileView = false;
+    
+       function toggleDropDown() {
+         console.log('fffffffffffff');
+         
+         console.log('ismobileview',isMobileView);
+         
+         if(isMobileView){
+          var y = document.getElementById("drpdown-content");
+            if (y.style.display === "block") {
+              y.style.display = "none";
+            } else {
+              y.style.display = "block";
+            }
+         }
+    
+       } 
+    
+    
+        function dropDownForMobile(x) {
+          if (x.matches) { // If media query matches
+            console.log('kkkkkkkkkkkkk');
+            isMobileView = true;
+    
+            
+    
+          } else {
+            // document.body.style.backgroundColor = "pink";
+            isMobileView = false;
+          }
+        }
+    
+        var x = window.matchMedia("(max-width: 768px)")
+        dropDownForMobile(x); // Call listener function at run time
+        x.addListener(dropDownForMobile);
+    
+    
+    
+        //mobile side nav functionality
+    
+        function openNav() {
+          console.log(
+            'goitttttit'
+          );
+          document.getElementById("mySidenav").style.display = "block";
+      document.getElementById("mySidenav").style.width = "175px";
+      document.getElementById("mySidenav").style.transition = "0.5s";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    
+    
+    document.getElementById('main-contents').addEventListener('click', ()=>{
+      console.log('hide');
+      
+      document.getElementById("mySidenav").style.display = "none";
+    });
+    
+    
+    
+      </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>
